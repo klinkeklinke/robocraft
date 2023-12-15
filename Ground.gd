@@ -5,11 +5,6 @@ extends StaticBody3D
 func _ready():
 	pass # Replace with function body.
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
-
-func set_destination(position: Vector3):
-	print('set destination: '+ str(position))
-	get_parent().set_destination(position)
+func set_destination(dest: Vector3):
+	print('set destination: '+ str(dest))
+	get_parent().set_destination(dest)
